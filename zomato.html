@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Zomato</title>
+    <link rel="icon" type="image" href="logo.png">
+    <link rel="stylesheet" href="zomato.css">
+    <script src="zomato.js"></script>
+</head>
+<body onload="setpage()"> 
+<div class="navbar">
+    <div class="a1">Zomato</div>
+    <div class="a2">
+        <select class="city">
+            <option value="">Location</option>
+            <option value="jamshedpur">jamshedpur</option>
+            <option value="ranchi">ranchi</option>
+            <option value="dhanbad">dhanbad</option>
+            <option value="kolkata">kolkata</option>
+            <option value="delhi">delhi</option>
+        </select>
+        |
+        <input type="text" class="txt" placeholder="search for restaurant,cuisine or a dish">
+  </div>
+    <div class="a4">
+        <div onclick="signup()">
+            <img src="sign.jpg" width="35%" height="35px">
+            <p >sign up</p>
+        </div>
+        <div onclick="offers()">
+            <img src="offer.jpg" width="25%" height="30px">
+            <p >Offers <sup>new</sup></p>
+        </div>
+        <div onclick="">
+            <img src="help.jpg" width="40%" height="35px">
+            <p>Help</p>
+        </div>
+        <div onclick="viewcartt()">
+            <img src="cart.jpg" width="30%" height="35px">
+            <p >Carts</p>
+        </div>
+    </div>
+</div>
+     <hr  style=" margin-left:-200px; "width="1510px">
+
+     <div id="restaurant">
+
+    <div class="a8">
+        <div class="hme">Home</div>/
+        <div class="hme">India</div>/
+        <div class="">Restaurents</div>
+    </div>
+    
+    <!-- <hr  style=" margin-left:-200px"width="1520px"> -->
+  
+    
+
+
+
+
+    <div class="dinning">
+      <div class="b1" id="b1">
+        <div class="logo1"><img src="dinner.png" ></div>
+        <div class="d1" style="font-size: 20px;" id="d1" onclick="dinning()">Dining Out</div>
+    </div>
+    <div class="b2" id="b2">
+        <div  class="logo2"><img src="delivery.png" ></div>
+        <div class="d1"  id="d2" onclick="dinning1()">Delivery</div>
+    </div>
+    <div class="b3" id="b3">
+        <div  class="logo3"><img src="drink.png"></div>
+        <div class="d1" id="d3" onclick="dinning2()">Nightlife</div>
+    </div>
+</div>
+
+   <div class="collect">
+        <div class="coll"> 
+            <h1>Collections</h1>
+            <div class="collections">
+                <div class="c1">
+                    <p>Explore curated lists of top restaurants, cafes, pubs, and bars in Jamshedpur, based on trends</p>
+                </div>
+                <div class="c2">
+                    <p>All Collections of Jamshedpur</p>
+                    <div class="arroww"><img src="arrow-right.png" width="100%"></div>
+                </div>
+            </div>
+        </div>
+       <div class="dishes-collection">
+			<div class="bir">
+				<img src="biryani.jpg" onclick="biryani(1)">
+				<p> Biryani</p>
+			</div>
+			<div class="dishes">
+				<img src="pizza1.jpg">
+				<p>Pizza</p>
+			</div>
+			<div class="dishes">
+				<img src="chicken.jpg">
+				<p>Chicken</p>
+			</div>
+			<div class="dishes">
+				<img src="chole bhatore.jpg">
+				<p>Chole Bhature</p>
+			</div>
+			<div class="dishes">
+				<img src="paratha.jpg">
+				<p>Paratha</p>
+			</div>
+
+			<div class="dishes">
+				<img src="khichdi.jpg">
+				<p>Khichdi</p>
+			</div>
+			
+	
+			<div class="dishes">
+				<img src="dosa.jpg">
+				<p>South Indian</p>
+			</div>
+			<div class="dishes">
+				<img src="kabab.jpg">
+				<p>Kabab</p>
+			</div>
+			<div class="dishes">
+				<img src="gulab jamun.jpg">
+				<p>Sweets</p>
+			</div>
+			<div class="dishes">
+				<img src="lassi.jpg">
+				<p>Lassi</p>
+			</div>
+			<div class="dishes">
+				<img src="shakes.jpg">
+				<p>Dessert</p>
+			</div>
+			<div class="dishes">
+				<img src="cooldrink.jpg">
+				<p>Soft Drinks</p>
+			</div>
+		</div>
+
+	</div>
+<br>
+    <div id="container">
+        <div id="sliderbox">
+            <img src="food.gif">
+            <img src="food1.gif">
+            <img src="off.avif">
+    </div>
+</div>
+
+   <br>
+    <div class="options">
+        <div class="opt" style="margin-left:200px ; padding: 0px 15px;">
+            <button onclick="filter()">filter</button>
+            <button onclick="">Offers</button>
+            <button onclick="">Rating:4.5+</button>
+            <button onclick="">Pet Friendly</button>
+            <button onclick="">Outdoor Seating </button>
+            <button onclick="">Serves Alcohol</button>
+            <button onclick="">Open New</button>
+        </div>
+    </div>
+    
+
+    <div class=""><h1>Restaurent in Jamshedpur</h1></div>
+    <div class="restau-collection">
+        <div class="restaurent" >
+            <div class="restau"  onclick="faltu(1)" >
+                 <img src="mashq.jpg">
+                    <div class="flat">Flat 20% off</div>
+                    <div style="font-size: 20px;font-weight: bold;margin-top: 20px;">Mashq 
+                        <div style="margin-top:-20px ;"><button>4.5*</button></div>
+                    </div>
+                    <p>North Indian,kabab,Roll... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1000 for two</p>
+                        Bistupur,Jmashedpur
+                        2.2km
+            </div>   
+        </div>
+
+        <div class="restaurent">
+            <div class="restau" onclick="faltu(2)" >
+                 <img src="motimahal.avif">
+                  <div class="flat">Flat 20% off</div>
+                    <div style="font-size: 20px;font-weight: bold;margin-top: 20px;">Motimahal
+                        <div style="margin-top:-20px ;"><button>4.5*</button></div>
+                    </div>
+                    <p>North Indian,kabab,Roll... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1000 for two</p>
+                        Bistupur,Jmashedpur
+                        2.2km
+            </div>   
+        </div>
+
+        <div class="restaurent">
+            <div class="restau" onclick="faltu(3)">
+                 <img src="Ruhani.webp">
+                  <div class="flat">Flat 20% off</div>
+                    <div style="font-size: 20px;font-weight: bold;margin-top: 20px;">The Ruhani 
+                        <div style="margin-top:-20px ;"><button>4.5*</button></div>
+                    </div>
+                    <p>North Indian,kabab,Roll... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1000 for two</p>
+                        Bistupur,Jmashedpur
+                        2.2km
+            </div>   
+        </div>
+    </div>
+     <div class="restau-collection">
+        <div class="restaurent">
+            <div class="restau" onclick="faltu(4)">
+                 <img src="tandoori.avif">
+                  <div class="flat">Flat 20% off</div>
+                   <div style="font-size: 20px;font-weight: bold;margin-top: 20px;">Tandoori Hut
+                        <div style="margin-top:-20px ;"><button>4.5*</button></div>
+                    </div>
+                    <p>North Indian,kabab,Roll... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1000 for two</p>
+                        Bistupur,Jmashedpur
+                        2.2km
+            </div>   
+        </div>
+
+        <div class="restaurent">
+            <div class="restau" onclick="faltu(5)">
+                 <img src="the combo.avif">
+                  <div class="flat">Flat 20% off</div>
+                   <div style="font-size: 20px;font-weight: bold;margin-top: 20px;">The Combo 
+                        <div style="margin-top:-20px ;"><button>4.5*</button></div>
+                    </div>
+                    <p>North Indian,kabab,Roll... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1000 for two</p>
+                        Bistupur,Jmashedpur
+                        2.2km
+            </div>   
+        </div>
+
+        <div class="restaurent">
+            <div class="restau" onclick="faltu(6)">
+                 <img src="starbucks.avif">
+                  <div class="flat">Flat 20% off</div>
+                   <div style="font-size: 20px;font-weight: bold;margin-top: 20px;">Starbucks
+                        <div style="margin-top:-20px ;"><button>4.5*</button></div>
+                    </div>
+                    <p>North Indian,kabab,Roll... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1000 for two</p>
+                        Bistupur,Jmashedpur
+                        2.2km
+            </div>   
+        </div>
+    </div>
+     <div class="restau-collection">
+        <div class="restaurent">
+            <div class="restau" onclick="faltu(7)">
+                 <img src="pizza hut.avif">
+                  <div class="flat">Flat 20% off</div>
+                    <div style="font-size: 20px;font-weight: bold;margin-top: 20px;">Pizza HUt
+                        <div style="margin-top:-20px ;"><button>4.5*</button></div>
+                    </div>
+                    <p>North Indian,kabab,Roll... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1000 for two</p>
+                        Bistupur,Jmashedpur
+                        2.2km
+            </div>   
+        </div>
+
+        <div class="restaurent">
+            <div class="restau" onclick="faltu(8)">
+                 <img src="mocha.avif">
+                  <div class="flat">Flat 20% off</div>
+                   <div style="font-size: 20px;font-weight: bold;margin-top: 20px;">Mocha
+                        <div style="margin-top:-20px ;"><button>4.5*</button></div>
+                    </div>
+                    <p>North Indian,kabab,Roll... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1000 for two</p>
+                        Bistupur,Jmashedpur
+                        2.2km
+            </div>   
+        </div>
+
+        <div class="restaurent">
+            <div class="restau" onclick="faltu(9)">
+                 <img src="horidra.avif">
+                  <div class="flat">Flat 20% off</div>
+                    <div style="font-size: 20px;font-weight: bold;margin-top: 20px;">Horidra Bhojanalaya
+                        <div style="margin-top:-20px ;"><button>4.5*</button></div>
+                    </div>
+                    <p>North Indian,kabab,Roll... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1000 for two</p>
+                        Bistupur,Jmashedpur
+                        2.2km
+            </div>   
+        </div>
+    </div>
+     <div class="restau-collection">
+        <div class="restaurent">
+            <div class="restau" onclick="faltu(10)">
+                 <img src="ras.avif">
+                  <div class="flat">Flat 20% off</div>
+                   <div style="font-size: 20px;font-weight: bold;margin-top: 20px;">Barbeque Nation
+                        <div style="margin-top:-20px ;"><button>4.5*</button></div>
+                    </div>
+                    <p>North Indian,kabab,Roll... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1000 for two</p>
+                        Bistupur,Jmashedpur
+                        2.2km
+            </div>   
+        </div>
+
+        <div class="restaurent">
+            <div class="restau" onclick="faltu(11)">
+                 <img src="moon.avif">
+                  <div class="flat">Flat 20% off</div>
+                   <div style="font-size: 20px;font-weight: bold;margin-top: 20px;">Moon 
+                        <div style="margin-top:-20px ;"><button>4.5*</button></div>
+                    </div>
+                    <p>North Indian,kabab,Roll... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1000 for two</p>
+                        Bistupur,Jmashedpur
+                        2.2km
+            </div>   
+        </div>
+
+        <div class="restaurent">
+            <div class="restau" onclick="faltu(12)">
+                 <img src="novelty.avif">
+                  <div class="flat">Flat 20% off</div>
+                   <div style="font-size: 20px;font-weight: bold;margin-top: 20px;">Novelty 
+                        <div style="margin-top:-20px ;"><button>4.5*</button></div>
+                    </div>
+                    <p>North Indian,kabab,Roll... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1000 for two</p>
+                        Bistupur,Jmashedpur
+                        2.2km
+            </div>   
+        </div>
+    </div>
+    </div>
+
+
+    <!-- -------------------------------------------------------restrurent option--------------------------------------------------------------------- -->
+    <div class="restro-mashq" id="restro-mashq">
+
+        <div class="mashq-header">
+            <div class="mashq-header1">
+
+        <div class="a8">
+            <div class="hme">Home</div>/
+            <div class="hme">India</div>/
+            <div class="hme">Jamshedpur</div>/
+            <div class="hme">Bistupur</div>/
+            <div class="hme">Order Online</div>
+        </div>
+        <div class="" style="display: flex;">
+            <div><h1 style="margin-top: 0px;" id="restro-name"></h1></div>
+             <div class="Mashq">
+                <button  id="rating1"></button>
+                <p >36<br>Dining Rating</p>
+            </div>
+            <div class="Mashq" style="margin-left:-80px;">
+                <button id="rating2"></button>
+                <p>91<br>Delivery Rating</p>
+            </div>
+        </div> 
+
+        <div class="address"><p id="add"></p></div> 
+        <div class="time">
+            <div class="time-table">
+                <div><font color="red">Open now</font>- 12noon - 11pm(Today)</div>
+                <div id="opennow">
+                    <img src="icons8-info-32.png" onclick="arrow()" width="20px"height="20px" style="margin-top:0px;">
+                </div>
+                
+                    <div class="time-schedule">
+                            <div class="open-hr">
+                                <h3>Opening Hours</h3>
+                                <p><b>Mon-Sun:</b> 12noon - 11pm</p>
+                            </div>
+                        <div class="arrow"></div>
+                    </div>
+            </div>
+
+            <!-- <div class="time-schedule" id="time">
+            <div class="open-hr">
+                <h2>Opening Hours</h2><p> <font style="font-weight:bold">Mon-Sun: </font>12noon - 11pm</p>
+            </div>
+            <div class="arrow"></div>
+        </div> -->
+
+
+      
+            <div class="time">
+                <div><img src="icons8-incoming-call-24.png" width="20px" height="20px"></div>
+
+                <div style="gap: 8px;">+91-9110932729  
+                    <span class="more">+1 more
+                        <div class="tooltip">
+                             +91-9110932729 <br>
+                            +91-9876543210
+                         </div>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+        <div class="time1">
+            <div class="direction">
+                <div><img src="icons8-route-48.png" width="20px" height="20px"></div>
+                <div><p>Direction</p></div>
+            </div>
+
+             <div class="direction">
+                <div><img src="icons8-forward-arrow-48.png" width="20px" height="20px"></div>
+                <div><p>Share</p></div>
+            </div>
+
+             <div class="direction">
+                <div><img src="icons8-review-50.png" width="20px" height="20px"></div>
+                <div><p>Reviews</p></div>
+            </div>
+
+             <div class="direction1">
+                <div><img src="icons8-calender-85.png" width="20px" height="20px"></div>
+                <div><p>Book a Table</p></div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+
+
+        <main3>
+            <div class="g1"><img src="mashq.jpg"  class="imag" width="100%" height="100%"></div>
+            <div class="g2"><img src="motimahal.avif" width="100%" height="100%"></div>
+            <div class="g3"><img src="mocha.avif" width="100%" height="100%"></div>
+            <div class="g4"><img src="the combo.avif" width="100%" height="100%"></div>
+        </main3>
+
+        <div class="deal">
+             <main4>
+                <div class="n1">Deal for you</div>
+                <div class="n2" onclick="scrollslider(-1)"><img src="arrow-right.png"></div>
+                <div class="n3" onclick="scrollslider(1)"><img src="arrow-right.png"></div>
+             </main4>
+            
+            <div class="offer" id="offers">
+                <div class="flat-off" id="offer1">
+                    <div><img src="offer per.avif" width="40" height="40"></div>
+                    <div>
+                        <h3>Flat 50% Off</h3>
+                        <p>USE FIRSTORDER</p>
+                     </div>
+                </div>
+
+                <div class="flat-off" id="offer2">
+                 <div><img src="offer per.avif" width="40" height="40"></div>
+                    <div>
+                        <h3>Flat 100 Off</h3>
+                        <p>USE FLATDEAL</p>
+                    </div>
+                </div>
+
+                <div class="flat-off" id="offer3">
+                    <div><img src="offer per.avif" width="40px" height="40px"></div>
+                    <div>
+                        <h3>Flat 175 Off</h3>
+                        <p>USE MEGASAVER</p>
+                    </div>
+                </div>
+
+                <div class="flat-off" id="offer4">
+                    <div><img src="offer per.avif" width="40" height="40"></div>
+                    <div>
+                        <h3>Flat 300 Off</h3>
+                        <p>USE NEWYEARPARTY</p>
+                    </div>
+                </div>
+
+                <div class="flat-off" id="offer5">
+                    <div><img src="offer per.avif" width="40" height="40"></div>
+                    <div>
+                        <h3>7.5% Off Upto ₹100</h3>
+                        <p>NO CODE REQUIRED</p>
+                    </div>
+                </div>
+
+                <div class="flat-off" id="offer6">
+                    <div><img src="offer per.avif" width="40" height="40"></div>
+                    <div>
+                        <h3>Flat 50 Off</h3>
+                        <p>NO CODE REQUIRED</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu">
+                <img src="icons8-menu-64.png" width="24" height="24">
+                <p>MENU</p>
+                <img src="icons8-menu-64.png" width="24" height="24">
+            </div>
+
+            
+            <div class="search-dish"><p>Search for Dishes</p></div>
+    
+            <br>
+
+            <hr  style=" margin-left: 0px;"width="1100px">
+
+            <div class="food-order">
+                <div class="recommanded" style="padding-bottom: 0px;">
+                    <p style="font-weight: bold;">Recommanded(1)</p>
+                    <img src="">
+                </div>
+
+                <div class="food-discription1">
+                    
+                    <div class="food-add1">
+                        <!-- <p>Boneless Chicken chunks marinated in authentic Tikka masala </p> -->
+                        <img src="pizza1.jpg">
+                        <button>ADD</button> 
+                    </div>
+
+                    <div class="food-add1">
+                        <img src="tandoori.avif">
+                        <button>ADD</button> 
+                    </div>
+
+                      <div class="food-add1">
+                        <img src="noodles.jpg">
+                        <button>ADD</button> 
+                    </div>
+
+                      <div class="food-add1">
+                        <img src="chicken.jpg">
+                        <button>ADD</button> 
+                    </div>
+
+                </div>
+            </div>
+            
+             <div style=" width:1100px; height:15px; background-color: rgb(224, 222, 219); border-radius: 10px; margin-top: 30px; "></div>
+
+             <div class="food-order" id="foodorder">
+                <div class="recommanded" style="padding-bottom: 0px;">
+                    <p style="font-weight: bold;">Quick bites with Biryani</p>
+                    <img src="">
+                </div>
+
+                <div class="food-discription">
+                    <div class="discription">
+                        <img src="">
+                    `   <b><p id="item0"></p></b>
+                        <b ><p  id="price0"></p></b>
+                       <p> Serves 1 | Boneless Chicken chunks marinated in authentic Tikka masala and<br> 
+                        grilled on skewers. One of India's most popular dishes. Served with a Salad mix<br>
+                         & Mint Chutney. Kcal - 620 Contains - Milk & Nuts</p>
+                    </div>     
+
+                    <div class="food-add">
+                        <img src="" id="food-add0">
+                        <button class="add" id="additem1" onclick="add(1)">ADD</button>
+                        <div class="adds" id="additems1">
+                                <label type="" id="plus" onclick="dec(1)">-</label>
+                                <label type="text" id="lblqty1">0</label>
+                                <label type="" id="mins" onclick="inc(1)">+</label>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="line"></div>
+                <div class="food-discription">
+                    <div class="discription">
+                        <img src="">
+                        <b><p id="item1"></p></b>
+                        <b ><p  id="price1"></p></b>
+                       <p> Serves 1 | Boneless Chicken chunks marinated in authentic Tikka masala and<br> 
+                        grilled on skewers. One of India's most popular dishes. Served with a Salad mix<br>
+                         & Mint Chutney. Kcal - 620 Contains - Milk & Nuts</p>
+                    </div>     
+
+                    <div class="food-add">
+                        <img src="" id="food-add1">
+                        <button class="add" id="additem2" onclick="add(2)">ADD</button> 
+                        <div class="adds" id="additems2">
+                                <label type="" id="plus" onclick="dec(2)">-</label>
+                                <label type="text" id="lblqty2">0</label>
+                                <label type="" id="mins" onclick="inc(2)">+</label>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="line"></div>
+                <div class="food-discription">
+                    <div class="discription">
+                        <img src="">
+                         <b><p id="item2"></p></b>
+                        <b ><p  id="price2"></p></b>
+                        <p>Serves 1 | Boneless Chicken chunks marinated in authentic Tikka masala and<br> 
+                        grilled on skewers. One of India's most popular dishes. Served with a Salad mix<br>
+                         & Mint Chutney. Kcal - 620 Contains - Milk & Nuts</p>
+                    </div>     
+
+                    <div class="food-add">
+                        <img src=""id="food-add2">
+                        <button class="add" id="additem3" onclick="add(3)">ADD</button> 
+                        <div class="adds" id="additems3">
+                                <label type="" id="plus" onclick="dec(3)">-</label>
+                                <label type="text" id="lblqty3">0</label>
+                                <label type="" id="mins" onclick="inc(3)">+</label>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+                <div class="food-discription">
+                    <div class="discription">
+                        <img src="">
+                        <b><p id="item3"></p></b>
+                        <b ><p  id="price3"></p></b>
+                        <p>Serves 1 | Boneless Chicken chunks marinated in authentic Tikka masala and<br> 
+                        grilled on skewers. One of India's most popular dishes. Served with a Salad mix<br>
+                         & Mint Chutney. Kcal - 620 Contains - Milk & Nuts</p>
+                    </div>     
+
+                    <div class="food-add">
+                        <img src=""id="food-add3">
+                        <button  class="add" id="additem4" onclick="add(4)">ADD</button>
+                        <div class="adds" id="additems4">
+                                <label type="" id="plus" onclick="dec(4)">-</label>
+                                <label type="text" id="lblqty4">0</label>
+                                <label type="" id="mins" onclick="inc(4)">+</label>
+                            </div> 
+                    </div>
+                </div>
+
+                <div class="line"></div>
+                <div class="food-discription">
+                    <div class="discription">
+                        <img src="">
+                       <b><p id="item4"></p></b>
+                        <b ><p  id="price4"></p></b>
+                        <p>Serves 1 | Boneless Chicken chunks marinated in authentic Tikka masala and<br> 
+                        grilled on skewers. One of India's most popular dishes. Served with a Salad mix<br>
+                         & Mint Chutney. Kcal - 620 Contains - Milk & Nuts</p>
+                    </div>     
+
+                    <div class="food-add">
+                        <img src=""id="food-add4">
+                        <button class="add" id="additem5" onclick="add(5)">ADD</button> 
+                        <div class="adds"id="additems5">
+                                <label type="" id="plus" onclick="dec(5)">-</label>
+                                <label type="text" id="lblqty5">0</label>
+                                <label type="" id="mins" onclick="inc(5)">+</label>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+                <div class="food-discription">
+                    <div class="discription">
+                        <img src="">
+                       <b><p id="item5"></p></b>
+                        <b ><p  id="price5"></p></b>
+                        <p>Serves 1 | Boneless Chicken chunks marinated in authentic Tikka masala and<br> 
+                        grilled on skewers. One of India's most popular dishes. Served with a Salad mix<br>
+                         & Mint Chutney. Kcal - 620 Contains - Milk & Nuts</p>
+                    </div>     
+
+                    <div class="food-add">
+                        <img src=""id="food-add5">
+                        <button class="add" id="additem6" onclick="add(6)">ADD</button> 
+                        <div class="adds" id="additems6">
+                                <label type="" id="plus" onclick="dec(6)">-</label>
+                                <label type="text" id="lblqty6">0</label>
+                                <label type="" id="mins" onclick="inc(6)">+</label>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+                <div class="food-discription">
+                    <div class="discription">
+                        <img src="">
+                       <b><p id="item6"></p></b>
+                        <b ><p  id="price6"></p></b>
+                        <p>Serves 1 | Boneless Chicken chunks marinated in authentic Tikka masala and<br> 
+                        grilled on skewers. One of India's most popular dishes. Served with a Salad mix<br>
+                         & Mint Chutney. Kcal - 620 Contains - Milk & Nuts</p>
+                    </div>     
+
+                    <div class="food-add">
+                        <img src=""id="food-add6">
+                        <button  class="add" id="additem7" onclick="add(7)">ADD</button> 
+                        <div class="adds" id="additems7">
+                                <label type="" id="plus" onclick="dec(7)">-</label>
+                                <label type="text" id="lblqty7">0</label>
+                                <label type="" id="mins" onclick="inc(7)">+</label>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+                <div class="food-discription">
+                    <div class="discription">
+                        <img src="">
+                       <b><p id="item7"></p></b>
+                        <b ><p  id="price7"></p></b>
+                        <p>Serves 1 | Boneless Chicken chunks marinated in authentic Tikka masala and<br> 
+                        grilled on skewers. One of India's most popular dishes. Served with a Salad mix<br>
+                         & Mint Chutney. Kcal - 620 Contains - Milk & Nuts</p>
+                    </div>     
+
+                    <div class="food-add">
+                        <img src=""id="food-add7">
+                        <button class="add" id="additem8" onclick="add(8)">ADD</button> 
+                        <div class="adds" id="additems8">
+                                <label type="" id="plus" onclick="dec(8)">-</label>
+                                <label type="text" id="lblqty8">0</label>
+                                <label type="" id="mins" onclick="inc(8)">+</label>
+                            </div>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+                <div class="food-discription">
+                    <div class="discription">
+                        <img src="">
+                       <b><p id="item8"></p></b>
+                        <b ><p  id="price8"></p></b>
+                        <p>Serves 1 | Boneless Chicken chunks marinated in authentic Tikka masala and<br> 
+                        grilled on skewers. One of India's most popular dishes. Served with a Salad mix<br>
+                         & Mint Chutney. Kcal - 620 Contains - Milk & Nuts</p>
+                    </div>     
+
+                    <div class="food-add">
+                        <img src=""id="food-add8">
+                        <button class="add" id="additem9" onclick="add(9)">ADD</button>
+                        <div class="adds" id="additems9">
+                                <label type="" id="plus" onclick="dec(9)">-</label>
+                                <label type="text" id="lblqty9">0</label>
+                                <label type="" id="mins" onclick="inc(9)">+</label>
+                            </div> 
+                    </div>
+                </div>
+
+                <div class="line"></div>
+            </div>
+        </div>
+  
+    </div>
+
+
+<br>
+<br>
+<br><br>
+    <div class="footer-section">
+        <div class="app">
+            <p style="font-size: 20px;font-weight:bold;"> For better experience,download the Swiggy app nows</p>
+            <div class="google-play"> 
+                <div class="play">
+                    <img src="icons8-play-store-50.png">
+                    <p style="margin-top: -47px; margin-left: 40px;">Get it in</p>
+                    <p style="font-size: 23px; margin-top:-15px;margin-left: 20px;">Google Play</p>
+                </div>
+            </div>
+             <div class="google-play1">
+            <div class="">
+                <img src="apple1.png">
+                <p>Download on the</p>
+                <p style="font-size: 25px; margin-top:-15px;">App Store</p>
+             </div>
+            </div>
+        </div>
+        <div class="copy-right">
+         <div class="zom">Zomato</div>
+         @ 2025 Zomato Limited
+         <div class="delivary"><img src="delivary1.png"></div>
+        </div>
+
+            <div class="footer">
+                <div class="footer-link">
+                    <div class="footer-column">
+                        <div>Company</div>
+                            <ul class="col-link">
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">Zomato Corporate</a></li>
+                                <li><a href="">Careers</a></li>
+								<li><a href="">Team</a></li>
+                                <li><a href="">Zomato One</a></li>
+                                <li><a href="">Zomato Dineout</a></li>
+                                <li><a href="">Zomato Genie</a></li>
+                                <li><a href="">Minis</a></li>
+                                <li><a href="">Pyng</a></li>    
+                            
+                            </ul>
+                    </div>
+                    <div class="footer-column">
+                        <div>Contact Us</div>
+                            <ul class="col-link">
+                                <li><a href="">Help &Support</a></li>
+                                <li><a href="">Partner with us</a></li>
+                                <li><a href="">Ride with us</a></li>
+                                
+                            </ul>
+                    </div>
+                    <div class="footer-column">
+                        <div>Available in:</div>
+                            <ul class="col-link">
+                                <li><a href="">Bangalore</a></li>
+                                <li><a href="">Gurgaon</a></li>
+                                <li><a href="">Hyderabad</a></li>
+                                <li><a href="">Delhi</a></li>
+                                <li><a href="">Mumbai</a></li>
+                                <li><a href="">Pune</a></li>
+                            </ul>
+                            <select class="city1">
+                                 <option value="">-- 679 cities--</option>
+                                <option value="jamshedpur">jamshedpur</option>
+                                <option value="ranchi">ranchi</option>
+                                <option value="dhanbad">dhanbad</option>
+                                <option value="kolkata">kolkata</option>
+                                <option value="delhi">delhi</option>
+                            </select>
+                    </div>
+                    <div class="footer-column">
+                        <div>Life at Zomato</div>
+                            <ul class="col-link">
+                                <li><a href="">Explore with Swiggy</a></li>
+                                <li><a href="">Zomato news</a></li>
+                                <li><a href="">Snackables</a></li>
+                            </ul>	
+				    </div>
+                    <div class="footer-column">
+                        <div class="social-link">Social Links</div>
+                            <div class="social-links">
+                                <img src="icons8-linkedin-94.png" alt="LinkedIn">
+                                <img src="icons8-facebook-logo-94.png" alt="Facebook">
+                                <img src="icons8-instagram-logo-94.png" alt="Instagram">
+                             </div>
+                            </div>
+                </div>
+			</div>
+    </div>
+
+<!-- -------------------------------------view cart ---------------------------------------------- -->
+
+	<div class="preview" id="viewcart" onclick="viewcartt()">
+        <div class="text">
+            <h4>view in Cart</h4>
+            <!-- <p>Sign up to get unliited songs and podcasts with occasional ads.No credit card needed</p> -->
+        </div>
+        <div class="cartbutton">
+            <img src="icons8-cart.gif" width="100%" height="35px" >
+            <label id="cartqty"></label>
+        </div>
+    </div>	
+     
+
+
+
+    
+<!-----------------------------------------------------------sign up form----------------------------------------------  -->
+
+
+<div class="signin" id="login">
+    <div class="overlay">
+       
+    <div class="phone">
+        <div class="cross" onclick="cross()" ><img src="icons8-multiply-64.png" width="100%" height="100%"></div>
+        <h1 class="logo">zomato</h1>
+        
+        <div class="card">
+            <div class="tabs">
+                <span class="tab active" id="SLin" onclick="showLogin()">Sign In</span>
+                <span class="tab" id="SLup" onclick="showSignup()">Sign Up</span>
+            </div>
+
+            <!-- Login -->
+            <div class="form" id="loginForm">
+                <input type="email" id="email" placeholder="Email">
+                <input type="password" id="passwd" placeholder="Password">
+                <input type="checkbox" id="showPassword" onclick="showpass()">Show Password
+                    
+                
+                <button class="btn" onclick="signinzomato()">Sign In</button>
+                <div class="or">OR</div>
+                <button class="fb-btn">Sign in with Facebook</button> <br><br>
+                <button class="fb-btn">Sign in with Google</button> <br><br>
+                <button class="fb-btn">Sign in with Iphone</button>
+                <a href="#" class="forgot">Forgot Password?</a>
+            </div>
+
+            <!-- Signup -->
+            <div class="form hidden" id="signupForm">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <input type="checkbox" id="showPassword" onclick="showpass()">Show Password
+                <button class="btn" onclick="createaccount()">Create Account</button>
+                <div class="or">OR</div>
+                <button class="fb-btn">Sign in with Google</button> <br><br>
+                <button class="fb-btn">Sign in with Iphone</button>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<!-- --------------------------------------------cart option ----------------------------------------------- -->
+<div class="viewcart" id="cart">
+    
+    <div class="signin1">
+          
+    <div class="cart-card">
+        <div class="cross1" onclick="cross()"><img src="icons8-multiply.png" width="100%" height="100%"></div>
+        <div class="restaurant-info">
+            <img src="motimahal.avif" alt="Restaurant">
+            <div>
+                <h2 id="restroname"></h2>
+                <p id="address"></p>
+            </div>
+        </div>
+
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>SL.No</th>
+                    <th>Food Name</th>
+                    <th>Quantity</th>
+                    <th>Price (₹)</th>
+                    <th> total Price (₹)</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr id="row0">
+                    <td >1</td>
+                    <td><label id="itemnme0"></label></td>
+                    <td><label id="qty0"></label></td>
+                    <td><label id="fprice0"></label></td>
+                    <td><label id="foodprice0"></label></td>
+                </tr>
+                <tr id="row1">
+                    <td >2</td>
+                    <td><label id="itemnme1"></label></td>
+                    <td><label id="qty1"></label></td>
+                    <td><label id="fprice1"></label></td>
+                    <td><label id="foodprice1"></label></td>
+                </tr>
+                <tr id="row2">
+                    <td>3</td>
+                    <td><label id="itemnme2"></label></td>
+                    <td><label id="qty2"></label></td>
+                    <td><label id="fprice2"></label></td>
+                    <td><label id="foodprice2"></label></td>
+                </tr>
+                <tr id="row3">
+                    <td>4</td>
+                    <td><label id="itemnme3"></label></td>
+                    <td><label id="qty3"></label></td>
+                    <td><label id="fprice3"></label></td>
+                    <td><label id="foodprice3"></label></td>
+                </tr>
+                <tr id="row4">
+                    <td>5</td>
+                    <td><label id="itemnme4"></label></td>
+                    <td><label id="qty4"></label></td>
+                    <td><label id="fprice4"></label></td>
+                    <td><label id="foodprice4"></label></td>
+                </tr>
+                <tr id="row5">
+                    <td>6</td>
+                    <td><label id="itemnme5"></label></td>
+                    <td><label id="qty5"></label></td>
+                    <td><label id="fprice5"></label></td>
+                    <td><label id="foodprice5"></label></td>
+                </tr>
+                <tr id="row6">
+                    <td>7</td>
+                    <td><label id="itemnme6"></label></td>
+                    <td><label id="qty6"></label></td>
+                    <td><label id="fprice6"></label></td>
+                    <td><label id="foodprice6"></label></td>
+                </tr>
+                <tr id="row7">
+                    <td>8</td>
+                    <td><label id="itemnme7"></label></td>
+                    <td><label id="qty7"></label></td>
+                    <td><label id="fprice7"></label></td>
+                    <td><label id="foodprice7"></label></td>
+                </tr>
+                <tr id="row8">
+                    <td>9</td>
+                    <td><label id="itemnme8"></label></td>
+                    <td><label id="qty8"></label></td>
+                    <td><label id="fprice8"></label></td>
+                    <td><label id="foodprice8"></label></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <!-- Bill Section -->
+        <div class="bill-summary">
+            <h2 >Bill Details</h2>
+            <div><span>Item Total :</span><span id="itemtotal" style="font-weight: bold;font-size: 15px;"></span></div>
+            <div><span>Discount :</span><span>- ₹50</span></div>
+            <div><span>GST / Other Charges :</span><span>₹30</span></div>
+            <div><span>Delivery Fee (1.0 KM) :</span><span>₹25</span></div>
+            <hr>
+            <div class="total-pay">
+                <span>TO PAY</span>
+                <span id="pay"></span>
+            </div>
+        </div>0
+        <div class="pay">PAY NOW</div>
+    </div>
+    </div>
+</div>
+
+
+<!-------------------------------------------cart is empty-----------------------------------  -->
+
+<div class="emptycart" id="emptycart">
+    <div class="empty">
+         <img src="empty.png">
+        <p>Your Cart is Empty</p>
+    <button onclick="continueorder()">Continue Order</button>
+    </div>
+</div>
+
+
+</body>
+</html>
